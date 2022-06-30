@@ -8,5 +8,6 @@ target 'clothable' do
   # Pods for clothable
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
+    pod 'lottie-ios'
 
 end

@@ -17,6 +17,11 @@
 		B573CD3427E23B5600A55509 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573CD3327E23B5600A55509 /* LoginViewController.swift */; };
 		B573CD3627E35CFD00A55509 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573CD3527E35CFD00A55509 /* FinalViewController.swift */; };
 		B573CD3B27E36A9000A55509 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B573CD3A27E36A9000A55509 /* GoogleService-Info.plist */; };
+		B5772E8F286B47EC00C52DF1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5772E8D286B47EC00C52DF1 /* TableViewCell.swift */; };
+		B5772E90286B47EC00C52DF1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5772E8E286B47EC00C52DF1 /* TableViewCell.xib */; };
+		B5772E93286BAD6E00C52DF1 /* 97834-t-shirt.json in Resources */ = {isa = PBXBuildFile; fileRef = B5772E92286BAD6E00C52DF1 /* 97834-t-shirt.json */; };
+		B5772E99286C546F00C52DF1 /* weatherDailyApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5772E98286C546F00C52DF1 /* weatherDailyApiManager.swift */; };
+		B5772E9B286C66E600C52DF1 /* WeatherDailyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5772E9A286C66E600C52DF1 /* WeatherDailyModel.swift */; };
 		B5FB474427E9E56C00EF53C0 /* weatherApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB474327E9E56C00EF53C0 /* weatherApiManager.swift */; };
 		B5FB474627E9F91F00EF53C0 /* weatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB474527E9F91F00EF53C0 /* weatherData.swift */; };
 		B5FB474827EA043A00EF53C0 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB474727EA043A00EF53C0 /* WeatherModel.swift */; };
@@ -40,6 +45,11 @@
 		B573CD3327E23B5600A55509 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B573CD3527E35CFD00A55509 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		B573CD3A27E36A9000A55509 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5772E8D286B47EC00C52DF1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B5772E8E286B47EC00C52DF1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		B5772E92286BAD6E00C52DF1 /* 97834-t-shirt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "97834-t-shirt.json"; sourceTree = "<group>"; };
+		B5772E98286C546F00C52DF1 /* weatherDailyApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherDailyApiManager.swift; sourceTree = "<group>"; };
+		B5772E9A286C66E600C52DF1 /* WeatherDailyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyModel.swift; sourceTree = "<group>"; };
 		B5FB474327E9E56C00EF53C0 /* weatherApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherApiManager.swift; sourceTree = "<group>"; };
 		B5FB474527E9F91F00EF53C0 /* weatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherData.swift; sourceTree = "<group>"; };
 		B5FB474727EA043A00EF53C0 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
@@ -94,6 +104,7 @@
 				B573CD3827E35E3700A55509 /* view */,
 				B573CD3727E35D4100A55509 /* Controlers */,
 				B573CD2627E0BD7C00A55509 /* Assets.xcassets */,
+				B5772E92286BAD6E00C52DF1 /* 97834-t-shirt.json */,
 				B5FB474927F32B8200EF53C0 /* background  */,
 				B573CD2827E0BD7C00A55509 /* LaunchScreen.storyboard */,
 				B573CD2B27E0BD7C00A55509 /* Info.plist */,
@@ -109,6 +120,7 @@
 				B573CD3127E2192D00A55509 /* RegisterViewController.swift */,
 				B573CD3327E23B5600A55509 /* LoginViewController.swift */,
 				B573CD3527E35CFD00A55509 /* FinalViewController.swift */,
+				B5772E91286B47F700C52DF1 /* Cell */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -125,10 +137,21 @@
 			isa = PBXGroup;
 			children = (
 				B5FB474327E9E56C00EF53C0 /* weatherApiManager.swift */,
+				B5772E98286C546F00C52DF1 /* weatherDailyApiManager.swift */,
 				B5FB474527E9F91F00EF53C0 /* weatherData.swift */,
 				B5FB474727EA043A00EF53C0 /* WeatherModel.swift */,
+				B5772E9A286C66E600C52DF1 /* WeatherDailyModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		B5772E91286B47F700C52DF1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5772E8D286B47EC00C52DF1 /* TableViewCell.swift */,
+				B5772E8E286B47EC00C52DF1 /* TableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BA3B5132DD208D4205BFADFA /* Frameworks */ = {
@@ -200,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B573CD2A27E0BD7C00A55509 /* LaunchScreen.storyboard in Resources */,
+				B5772E93286BAD6E00C52DF1 /* 97834-t-shirt.json in Resources */,
+				B5772E90286B47EC00C52DF1 /* TableViewCell.xib in Resources */,
 				B573CD3B27E36A9000A55509 /* GoogleService-Info.plist in Resources */,
 				B5FB474A27F32B8200EF53C0 /* background  in Resources */,
 				B573CD2727E0BD7C00A55509 /* Assets.xcassets in Resources */,
@@ -256,11 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5772E9B286C66E600C52DF1 /* WeatherDailyModel.swift in Sources */,
 				B573CD3227E2192D00A55509 /* RegisterViewController.swift in Sources */,
 				B573CD3627E35CFD00A55509 /* FinalViewController.swift in Sources */,
+				B5772E99286C546F00C52DF1 /* weatherDailyApiManager.swift in Sources */,
 				B573CD2227E0BD7A00A55509 /* OutfitViewController.swift in Sources */,
 				B5FB474427E9E56C00EF53C0 /* weatherApiManager.swift in Sources */,
 				B5FB474827EA043A00EF53C0 /* WeatherModel.swift in Sources */,
+				B5772E8F286B47EC00C52DF1 /* TableViewCell.swift in Sources */,
 				B573CD1E27E0BD7A00A55509 /* AppDelegate.swift in Sources */,
 				B573CD3427E23B5600A55509 /* LoginViewController.swift in Sources */,
 				B5FB474627E9F91F00EF53C0 /* weatherData.swift in Sources */,

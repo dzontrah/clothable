@@ -6,14 +6,46 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct WeatherModel {
-
-    let temperatureNum: Double
     
+    let conditionIdCloud: Int
+    let temperatureNum: Double
+    var cityName: String
+    var description: String
+    let windSpeed: Double
+    let sys: Int
+    let sys2: Int
+    let currentProgresInfo: Float
+    let timezone: Double
+    
+       
     var temperaturaString: String {
         return String(format: "%.0f", temperatureNum)
     }
+    var speedString: String {
+        return String(format: "%.0f", windSpeed)
+    }
+    
+    var sunriseInfoString: String {
+        return String(sys)
+    }
+    var sunsetInfoString: String {
+        return String(sys2)
+    }
+    
+    var progressInfo: Float {
+        return Float(currentProgresInfo)
+    }
+    
+    var converSunrise: Double{
+        return Double(sys / 1000)
+    }
+    var converSunset: Double{
+        return Double(sys2 / 1000)
+    }
+   
     
     var conditionName: String {
         switch temperatureNum {
@@ -33,6 +65,8 @@ struct WeatherModel {
             return "kacket.muski"
         case 24...30:
             return "lepeza"
+        case 30...41:
+            return "lobanja"
         default:
             return "kisobran"
         }
@@ -55,6 +89,8 @@ struct WeatherModel {
             return "dzemper.muski"
         case 22...30:
             return "majca.muska"
+        case 30...42:
+            return "lobanja"
         default:
             return "kisobran"
     }
@@ -75,6 +111,8 @@ struct WeatherModel {
             return "bermude.muske1"
         case 25...30:
             return "sorc.muski"
+        case 30...42:
+            return "lobanja"
         default:
             return "kisobran"
     }
@@ -97,8 +135,32 @@ struct WeatherModel {
             return "patike"
         case 25...30:
             return "papuce.unisex"
+        case 30...42:
+            return "lobanja"
+            
         default:
             return "kisobran"
     }
     }
+    var conditionNameCloud: String {
+        switch conditionIdCloud {
+        case 200...232:
+            return "storm"
+        case 300...321:
+            return "light.rain"
+        case 500...531:
+            return "heavy.rain"
+        case 600...622:
+            return "snow"
+        case 701...781:
+            return "fog"
+        case 800:
+            return "sun"
+        case 801...804:
+            return "storm"
+        default:
+            return "cloud.blue"
+        }
+    }
+    
 }

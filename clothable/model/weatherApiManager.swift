@@ -10,13 +10,17 @@ import CoreLocation
 
 protocol WeatherManagerDelegate {
     func didUpdateWeather(weather: WeatherModel)
+   
+    
 }
 
 struct WeatherManager {
     
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?&appid=74b8ff04103ad6283d5e5b1e8605ddf3&units=metric"
     
+    
     var delegate: WeatherManagerDelegate?
+    
     
     func fetchWeather(imeGrada: String) {
         let urlString = "\(weatherURL)&q=\(imeGrada)"
@@ -54,9 +58,37 @@ struct WeatherManager {
         do{
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
             let temp = decodedData.main.temp
+            let name = decodedData.name
+            let desc = decodedData.weather[0].description
+            let id = decodedData.weather[0].id
+            let wind = decodedData.wind.speed
+            let timeZoneOffset = decodedData.timezone
+//            let list = decodedData.list
+//            print(list)
+            let sysSunrise = decodedData.sys.sunrise + decodedData.timezone
+            let sysSunset = decodedData.sys.sunset + decodedData.timezone
             
-            let weather = WeatherModel(temperatureNum: temp)
+            
+            
+            
+            
+            let fullDistance = sysSunset - sysSunrise
+            let currentDistance = Date().timeIntervalSince1970 - sysSunrise + timeZoneOffset
+            let currentProgress = currentDistance / fullDistance
+            print(currentProgress)
+           // print(timeZoneOffset)
+            
+            print("timestamp sunrise \(sysSunrise)")
+            print("timestamp sunset \(sysSunset)")
+            
+            
+            let weather = WeatherModel(conditionIdCloud: id, temperatureNum: Double(temp), cityName: name, description: desc, windSpeed: wind, sys: Int(sysSunrise), sys2:Int(sysSunset), currentProgresInfo: Float(currentProgress), timezone: timeZoneOffset)
+            
+            
+            
             return weather
+            
+          
             
         } catch {
             print(error)
