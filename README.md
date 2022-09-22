@@ -1,7 +1,7 @@
 # clothable
 
-![Simulator Screen Shot - iPhone 12 mini - 2022-09-22 at 14 29 10](https://user-images.githubusercontent.com/91903053/191747324-ad1b092c-ddd2-49b9-9dbc-7b5ee099301a.png)
-![Simulator Screen Shot - iPhone 12 mini - 2022-09-22 at 14 29 16](https://user-images.githubusercontent.com/91903053/191747336-c486c78a-e31c-4248-9329-9f52523b5060.png)
-![Simulator Screen Shot - iPhone 12 mini - 2022-09-22 at 14 29 49](https://user-images.githubusercontent.com/91903053/191747346-9839fc95-e5a6-416e-a64b-c1415b61577a.png)
-![Simulator Screen Shot - iPhone 12 mini - 2022-09-22 at 14 29 41](https://user-images.githubusercontent.com/91903053/191747360-72a008e5-6b0c-4a3d-b657-b675d2ef253d.png)
-![Simulator Screen Shot - iPhone 12 mini - 2022-09-22 at 14 29 25](https://user-images.githubusercontent.com/91903053/191747368-fc711a07-79c4-4f4f-97f5-262f1cedfa1e.png)
+
+![rsz_2simulator_screen_shot_-_iphone_12_mini_-_2022-09-22_at_142910](https://user-images.githubusercontent.com/91903053/191748681-7eb8b6a3-0d91-4a27-8801-62468634f40b.png)
+![rsz_simulator_screen_shot_-_iphone_12_mini_-_2022-09-22_at_142916](https://user-images.githubusercontent.com/91903053/191748688-8072117c-8073-43e8-bb80-5c4833caf6b7.png)
+![rsz_simulator_screen_shot_-_iphone_12_mini_-_2022-09-22_at_142925](https://user-images.githubusercontent.com/91903053/191748690-cd9dc9c2-29fa-4c9a-8c01-94163aaf5fdc.png)
+![rsz_simulator_screen_shot_-_iphone_12_mini_-_2022-09-22_at_142941](https://user-images.githubusercontent.com/91903053/191748693-86747697-6fb4-49c3-9168-a6c415aa0c07.png)
