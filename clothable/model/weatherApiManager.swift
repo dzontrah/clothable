@@ -63,32 +63,16 @@ struct WeatherManager {
             let id = decodedData.weather[0].id
             let wind = decodedData.wind.speed
             let timeZoneOffset = decodedData.timezone
-//            let list = decodedData.list
-//            print(list)
             let sysSunrise = decodedData.sys.sunrise + decodedData.timezone
             let sysSunset = decodedData.sys.sunset + decodedData.timezone
-            
-            
-            
-            
-            
             let fullDistance = sysSunset - sysSunrise
             let currentDistance = Date().timeIntervalSince1970 - sysSunrise + timeZoneOffset
             let currentProgress = currentDistance / fullDistance
             print(currentProgress)
-           // print(timeZoneOffset)
-            
-            print("timestamp sunrise \(sysSunrise)")
-            print("timestamp sunset \(sysSunset)")
-            
-            
+        
             let weather = WeatherModel(conditionIdCloud: id, temperatureNum: Double(temp), cityName: name, description: desc, windSpeed: wind, sys: Int(sysSunrise), sys2:Int(sysSunset), currentProgresInfo: Float(currentProgress), timezone: timeZoneOffset)
             
-            
-            
             return weather
-            
-          
             
         } catch {
             print(error)

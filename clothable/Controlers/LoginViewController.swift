@@ -12,7 +12,6 @@ import SwiftUI
 class LoginViewController: UIViewController {
     
     
-    
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var paswsordTextfield: UITextField!
     @IBOutlet weak var myButton: UIButton!
@@ -22,8 +21,9 @@ class LoginViewController: UIViewController {
         myButton.layer.masksToBounds = true
         emailTextfield.delegate = self
         paswsordTextfield.delegate = self
+        emailTextfield.layer.cornerRadius = 20
+        paswsordTextfield.layer.cornerRadius = 20
     }
-    
     @IBAction func loginPressed(_ sender: UIButton) {
         
         emailTextfield.endEditing(true)

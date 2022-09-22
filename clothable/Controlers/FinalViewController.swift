@@ -49,17 +49,14 @@ class FinalViewController: UIViewController, UITableViewDataSource {
         weatherDailyManager.delegate = self
         searchYourLocation.delegate = self
         
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
-        
-        
+//        self.tableView.dataSource = self
+//        self.tableView.delegate = self
+//
+//        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+
     }
 }
 
-    
-  
 //MARK: - UITextFieldDelegate
 
 extension FinalViewController: UITextFieldDelegate {
@@ -135,9 +132,6 @@ extension FinalViewController: WeatherManagerDelegate {
         }
     }
     
-   
-
-
     func didFailWithError(error: Error) {
         print(error)
     }
@@ -161,7 +155,7 @@ extension FinalViewController: WeatherManagerDailyDelegate {
     func didUpdateWeatherDaily(weatherDaily: [WeatherDailyModel]) {
         DispatchQueue.main.async {
             self.tabela = weatherDaily
-            self.tableView.reloadData()
+//            self.tableView.reloadData()
             
         }
     }

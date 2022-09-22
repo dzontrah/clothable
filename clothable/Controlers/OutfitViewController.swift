@@ -22,6 +22,7 @@ class OutfitViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -51,9 +52,9 @@ class OutfitViewController: UIViewController {
         
     }
     func setupAnimation(){
-        animationView.animation = Animation.named("97834-t-shirt")
+        animationView.animation = Animation.named("97387-digital-designer")
         animationView.frame = view.frame
-        animationView.backgroundColor = .clear
+        animationView.backgroundColor = .white
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .playOnce
         animationView.play()
