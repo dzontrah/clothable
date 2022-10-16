@@ -1,4 +1,5 @@
 # clothable
+It's an app that helps you to decide what to wear in a specific time of the day.
 
 
 ![rsz_2simulator_screen_shot_-_iphone_12_mini_-_2022-09-22_at_142910](https://user-images.githubusercontent.com/91903053/191748681-7eb8b6a3-0d91-4a27-8801-62468634f40b.png)
